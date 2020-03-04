@@ -1,0 +1,32 @@
+{
+    "name": "Direction",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "logicalMessage",
+            "otherEntityRelationshipName": "directionId",
+            "relationshipName": "id",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200304121500",
+    "entityTableName": "direction",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "SampleApp",
+    "applications": "*",
+    "microserviceName": "SampleApp"
+}
