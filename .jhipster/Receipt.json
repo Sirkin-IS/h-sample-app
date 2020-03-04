@@ -1,0 +1,46 @@
+{
+    "name": "Receipt",
+    "fields": [
+        {
+            "fieldName": "receiptTypeId",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "receiptDate",
+            "fieldType": "LocalDate",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "createdAt",
+            "fieldType": "LocalDate",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "logicalMessage",
+            "otherEntityRelationshipName": "receiptId",
+            "relationshipName": "id",
+            "ownerSide": false
+        }
+    ],
+    "changelogDate": "20200304121900",
+    "entityTableName": "receipt",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "SampleApp",
+    "applications": "*",
+    "microserviceName": "SampleApp"
+}
